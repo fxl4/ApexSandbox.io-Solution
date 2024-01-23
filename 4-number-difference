@@ -1,13 +1,19 @@
 public Integer diff(Integer a, Integer b) {
+    
     if(a > b){
-        return a - b;
+        Integer diff = a - b;
+        return Integer diff;
     } else if(a < b){
-        return b - a;
+        Integer diff =  b - a;
+        return Integer diff;
     } else if(a == b){
-        return 0;
+        Integer diff = 0;
+        return Integer diff;
     } else if(a == 0){
-        return b;
+        Integer diff = b;
+        return Integer diff;
     } else if(b == 0){
-        return a;
+        Integer diff = a;
+        return Integer diff;
     } 
 }
