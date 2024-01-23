@@ -8,5 +8,11 @@ public Integer diff(Integer a, Integer b) {
     } else if(a == b){
         difference = 0;
         return difference;
-    } else if()
+    } else if(a == 0){
+        difference = b;
+        return difference;
+    } else if(b == 0){
+        difference = a;
+        return difference;
+    } 
 }
