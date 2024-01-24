@@ -1,18 +1,10 @@
 public Integer diff(Integer a, Integer b) {
-    if(a > b){
-        Integer diff = Math.abs(a) - Math.abs(b);
-        return Integer diff;
-    } else if(a < b){
-        Integer diff =  Math.abs(b) - Math.abs(a);
-        return Integer diff;
-    } else if(a == b){
-        Integer diff = 0;
-        return Integer diff;
-    } else if(a == 0){
-        Integer diff = Math.abs(b);
-        return Integer diff;
-    } else if(b == 0){
-        Integer diff = Math.abs(a);
-        return Integer diff;
-    } 
+    if (a > b) {
+        return Math.abs(a - b);
+    } else if (a < b) {
+        return Math.abs(b - a);
+    } else {
+        // a == b or one of them is 0
+        return 0;
+    }
 }
