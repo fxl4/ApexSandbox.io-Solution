@@ -3,8 +3,12 @@ public Integer diff(Integer a, Integer b) {
         return Math.abs(a - b);
     } else if (a < b) {
         return Math.abs(b - a);
-    } else {
-        // a == b or one of them is 0
+    } else if (a == b) {
         return 0;
-    }
+    } else if (a == 0) {
+        return Math.abs(b);
+    } else if (b == 0) {
+        return Math.abs(a)
+    } 
 }
+
