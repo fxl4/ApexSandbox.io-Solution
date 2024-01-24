@@ -1,11 +1,8 @@
 public Boolean sumEquals(Integer a, Integer b, Integer c) {
     //code here
-    if(a + b == c){
-        sumEquals = true;
-        return Boolean sumEquals;
-    } else if (a + b != c){
-        sumEquals = false;
-        return Boolean sumEquals;
+    if(a + b == c) {
+        return true;
+    } else if (a + b != c) {
+        return false;
     }
 }
-       
