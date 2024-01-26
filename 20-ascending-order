@@ -1,4 +1,10 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     //code here
-    
+    List <Integer> integerList = [a, b, c];
+    integerList = integerList.sort();
+    if (integerList[0] =< integerList[1] and integerList[1] =< integerList[2]) {
+        return true;
+    } else {
+        return false;
+    }
 }
