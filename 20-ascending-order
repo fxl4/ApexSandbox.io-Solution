@@ -1,4 +1,5 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
+    
     //code here
     List <Integer> integerList = [a, b, c];
     integerList = integerList.sort();
@@ -7,4 +8,5 @@ public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     } else {
         return false;
     }
+
 }
