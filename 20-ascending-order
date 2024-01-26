@@ -1,7 +1,7 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
-    if (a == b and b == c) {
+    if (a == b && b == c) {
         return true;
-    } else if (a <= b and b <= c) {
+    } else if (a <= b && b <= c) {
         return true;
     } else {
         return false;
