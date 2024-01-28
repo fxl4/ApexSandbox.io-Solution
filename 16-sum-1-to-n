@@ -3,7 +3,7 @@ public Integer sumToN(Integer n) {
     Integer sum = 0;
     List<String> integerList;
     while (index != n) {
-        index += 1;
+        index = index + 1;
         integerList.add(index);
     }
     if (index == n) {
