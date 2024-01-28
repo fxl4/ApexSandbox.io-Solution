@@ -1,0 +1,9 @@
+public String evenOrOdd(Integer num) {
+    //code here
+    Integer divisionRemainder = num % 2;
+    if (divisionRemainder == 0) {
+        return 'even';
+    } else if (divisionRemainder != 0) {
+        return 'odd';
+    }
+}
