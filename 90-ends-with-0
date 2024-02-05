@@ -1,9 +1,9 @@
 public Boolean isEndWithZero(Integer num){
-    //code here
-    Integer remainder = Math.mod(num);
-    if (remainder == 0) {
+     //code here
+    String stringNum = num.toString();
+    if (stringNum.endsWith("0") {
         return true;
-    } else if (remainder != 0) {
+    } else {
         return false;
     }
 }
