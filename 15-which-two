@@ -3,17 +3,17 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     Integer num1 = a + b;
     Integer num2 = a + c;
     Integer num3 = b + c;
-    String stringA = 'a';
-    String stringB = 'b';
-    String stringC = 'c';
-    String emptyString = '';
+    //String stringA = 'a';
+    //String stringB = 'b';
+    //String stringC = 'c';
+    //String emptyString = '';
     if (num1 == c) {
-        return stringC;
+        return 'c';
     } else if (num2 == b) {
-        return stringB;
+        return 'b';
     } else if (num3 == a) {
-        return stringA;
+        return 'a';
     } else {
-        return emptyString;
+        return '';
     }
 }
