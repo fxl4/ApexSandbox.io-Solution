@@ -1,9 +1,11 @@
 public Boolean isLeapYear(Integer year) {
-    Boolean leapYearDetermination = false;
+    Boolean leapYearDetermination;
+    Double divByOneHundredRemainder = year / 100;
+    Double divByFourHundredRemainder = year / 400;
     
     if (year / 4 == 0) {
         leapYearDetermination = true;
-    } else if (Math.mod(year, 100) == 0 && Math.mod(year, 400) == 0) {
+    } else if (Math.mod(divByOneHundredRemainder, 1) == 0 && Math.mod(divByFourHundredRemainder, 1) == 0) {
         leapYearDetermination = true;
     } else {
         leapYearDetermination = false;
