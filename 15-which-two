@@ -6,11 +6,14 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     String stringA = 'a';
     String stringB = 'b';
     String stringC = 'c';
+    String emptyString = '';
     if (num1 == c) {
         return stringC;
     } else if (num2 == b) {
         return stringB;
     } else if (num3 == a) {
         return stringA;
+    } else {
+        return emptyString;
     }
 }
