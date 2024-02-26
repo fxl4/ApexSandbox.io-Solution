@@ -3,11 +3,14 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     Integer num1 = a + b;
     Integer num2 = a + c;
     Integer num3 = b + c;
+    String stringA = 'a';
+    String stringB = 'b';
+    String stringC = 'c';
     if (num1 == c) {
-        return String 'c';
+        return stringC;
     } else if (num2 == b) {
-        return String 'b';
+        return stringB;
     } else if (num3 == a) {
-        return String 'a';
+        return stringA;
     }
 }
