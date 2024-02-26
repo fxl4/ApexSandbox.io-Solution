@@ -6,6 +6,6 @@ public Boolean isLeapYear(Integer year) {
         leapYearDetermination = true;
     } else {
         leapYearDetermination = false;
-        return leapYearDetermination;
     }
+    return leapYearDetermination;
 }
