@@ -4,10 +4,10 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     Integer num2 = a + c;
     Integer num3 = b + c;
     if (num1 == c) {
-        return 'c';
+        return String 'c';
     } else if (num2 == b) {
-        return 'b';
+        return String 'b';
     } else if (num3 == a) {
-        return 'a';
+        return String 'a';
     }
 }
