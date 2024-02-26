@@ -8,6 +8,10 @@ public String formatName(String firstName, String lastName) {
         returnedString = '';
     } else if (firstName == '' && lastName == null) {
         returnedString = '';
+    } else if (firstName == null && lastName != null) {
+        returnedString = lastName;
+    } else if (firstName != null && lastName == null) {
+        returnedString = lastName;
     } else if (firstName == '' && lastName != '') {
         returnedString = lastName;
     } else if (firstName != '' && lastName == '') {
