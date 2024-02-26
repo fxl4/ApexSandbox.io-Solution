@@ -2,8 +2,8 @@ public Boolean isLeapYear(Integer year) {
     Boolean leapYearDetermination;
     if (Math.mod(year, 100) == 0 && Math.mod(year, 400) == 0) {
         leapYearDetermination = true;
-    } else if (Math.mod(year, 4) != 0) {
-        leapYearDetermination = false;
+    } else if (Math.mod(year, 4) == 0) {
+        leapYearDetermination = true;
     } else {
         leapYearDetermination = false;
     }
