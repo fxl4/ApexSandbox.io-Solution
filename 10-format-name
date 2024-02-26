@@ -11,9 +11,10 @@ public String formatName(String firstName, String lastName) {
     } else if (firstName == '' && lastName != '') {
         returnedString = lastName;
     } else if (firstName != '' && lastName == '') {
-        returnedString = lastName;
+        returnedString = firstName;
+    }  else if (firstName != '' && lastName != '') {
+        returnedString = lastName + ', ' + firstName;
     } 
-
     return returnedString;
 
 }
