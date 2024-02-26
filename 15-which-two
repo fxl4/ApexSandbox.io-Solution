@@ -1,10 +1,13 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     //code here
-    if (a + b == c) {
+    Integer num1 = a + b;
+    Integer num2 = a + c;
+    Integer num3 = b + c;
+    if (num1 == c) {
         return c;
-    } else if (a + c == b) {
+    } else if (num2 == b) {
         return b;
-    } else if (b + c == a) {
+    } else if (num3 == a) {
         return a;
     }
 }
