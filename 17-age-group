@@ -13,5 +13,6 @@ public String ageGroup(Integer n) {
         resultingGroup = 'Adult';
         //return String 'Adult';
     } 
+    return resultingGroup;
 
 }
