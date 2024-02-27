@@ -1,20 +1,22 @@
 public String changeTimeFormat(String strTime) {
     String standardTime;
-    String[] dividedTime = strTime.split(':');
-    String dividedHour = dividedTime[0];
-    Integer checkedHour;
-    checkedHour = checkedHour.valueOf;
-    String dividedMinute = dividedTime[1];
-    if (checkedHour >= 12) {
-        // if PM do this
-        checkedHour = checkedHour + 12;
-        checkedHour = checkedHour.toString();
-        checkedMinute = timeList[1] + ' PM';
-        standardTime = hourTime + minuteTime;
-    } else {
-        // if AM do this
-        // string methods to + ' AM' to end of string.
-        standardTime = hourTime + minuteTime + ' AM';
+    String indicator;
+
+    // Substring the value
+    String[] timeParts = strTime.split(':');
+    String hourPart = timeParts[0];
+    String minutePart = timeParts[1];
+
+    // Determine if AM or PM
+    Integer hoursInteger = Integer.valueOf(hourPart);
+    if (hoursInteger >= 12) {
+        hoursInteger = Math.mod(hoursInteger, 12);
+        hourPart = String.valueOf(hoursInteger);
+        standardTime = hourPart + ':' + minutePart + ' PM';
+    } else if (hoursInteger < 12) {
+        standardTime = hourPart + ':' + minutePart + ' AM';
     }
+
+    // Return standardized time
     return standardTime;
 }
