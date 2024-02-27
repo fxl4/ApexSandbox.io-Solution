@@ -1,16 +1,15 @@
 public String changeTimeFormat(String strTime) {
-    String militaryTime;
-    if (strTime.contains('p') || strTime.contains('P')) {
+    String standardTime;
+    if (strTime >= 12) {
         // if PM do this
-        strTime = strTime.replace(' PM', '');
         String[] timeList = strTime.split(":");
         Integer hourTime = timeList[0] + 12;
+        String minuteTime = timeList[1] + ' PM';
         hourTime = hourTime.toString();
-        String minuteTime = timeList[1];
-        militaryTime = hourTime + minuteTime;
+        standardTime = hourTime + minuteTime;
     } else {
         // if AM do this
-        // string methods to remove : and then space AM
+        // string methods to + ' AM' to end of string.
     }
-    return militaryTime;
+    return standardTime;
 }
