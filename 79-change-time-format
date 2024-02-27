@@ -2,7 +2,7 @@ public String changeTimeFormat(String strTime) {
     String standardTime;
     if (strTime >= 12) {
         // if PM do this
-        String[] timeList = strTime.split(":");
+        String[] timeList = strTime.split(':');
         Integer hourTime = timeList[0] + 12;
         String minuteTime = timeList[1] + ' PM';
         hourTime = hourTime.toString();
