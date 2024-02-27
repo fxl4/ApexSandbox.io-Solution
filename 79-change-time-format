@@ -13,17 +13,14 @@ public String changeTimeFormat(String strTime) {
 
     if (hoursInteger == 0) {
         hourPart = '12';
-        indicator = ' AM'
-        standardTime = hourPart + ':' + minutePart + indicator;
+        standardTime = hourPart + ':' + minutePart + ' AM';
     } else if (hoursInteger == 12) {
         hourPart = '12';
-        indicator = ' PM'
-        standardTime = hourPart + ':' + minutePart + indicator;
+        standardTime = hourPart + ':' + minutePart + ' PM';
     } else if (hoursInteger > 12) {
         hoursInteger = Math.mod(hoursInteger, 12);
-        indicator = ' PM'
         hourPart = String.valueOf(hoursInteger);
-        standardTime = '0' + hourPart + ':' + minutePart + indicator;
+        standardTime = '0' + hourPart + ':' + minutePart + ' PM';
     } else {
         standardTime = hourPart + ':' + minutePart + ' AM';
     }
