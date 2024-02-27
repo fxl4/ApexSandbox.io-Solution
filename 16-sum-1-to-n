@@ -1,13 +1,5 @@
 public Integer sumToN(Integer n) {
     //code here
-    Integer sumOfNums = 0;
-    /*Integer finalIndex = n + 1;
-    List<Integer> ints = new Integer[finalIndex];
-    for (Integer i = 0; i < finalIndex; i++) {
-        numList.add(i);
-    }*/
-    for (0 : n) {
-        sumOfNums += num;
-    }
-    return sumOfNums;
+    Integer oneInt = 1;
+    return oneInt;
 }
