@@ -2,7 +2,7 @@ public String nameFromEmail(String email) {
     String delimiter = '.';
     String firstSplit = email.substringBefore(delimiter);
     //lastSplit = email.substringBefore(delimiter);
-    Integer firstIndex = email.indexOf('.');
+    Integer firstIndex = email.indexOf('.') + 1;
     Integer lastIndex = email.indexOf('@');
     String lastSplit = email.substring(firstIndex, lastIndex);
     String justName = firstSplit + ' ' + lastSplit;
