@@ -5,6 +5,8 @@ public String nameFromEmail(String email) {
     Integer firstIndex = email.indexOf('.') + 1;
     Integer lastIndex = email.indexOf('@');
     String lastSplit = email.substring(firstIndex, lastIndex);
+    firstSplit = firstSplit.toLowerCase();
+    lastSplit = lastSplit.toLowerCase();
     firstSplit = firstSplit.capitalize();
     lastSplit = lastSplit.capitalize();
     String justName = firstSplit + ' ' + lastSplit;
