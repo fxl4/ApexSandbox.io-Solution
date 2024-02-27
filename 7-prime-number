@@ -1,10 +1,14 @@
 public Boolean isPrime(Integer num) {
     Boolean isNumberPrime;
-    float numFloat = parseFloat(num); 
+    for (i = 0; i < num; i++) {
+        ;
+    }
+
     if (num > 1 && Math.mod(num, num) == 0) {
         isNumberPrime = true;
     } else {
         isNumberPrime = false;
     }
+
     return isNumberPrime;
 }
