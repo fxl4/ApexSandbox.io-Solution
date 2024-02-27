@@ -1,14 +1,12 @@
 public Boolean isPrime(Integer num) {
     Boolean isNumberPrime;
-    for (i = 0; i < num; i++) {
+
+    Integer[] numList = {1};
+    for (i = 1; i <= num; i++) {
         ;
     }
 
-    if (num > 1 && Math.mod(num, num) == 0) {
-        isNumberPrime = true;
-    } else {
-        isNumberPrime = false;
-    }
+    
 
     return isNumberPrime;
 }
