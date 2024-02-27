@@ -1,5 +1,9 @@
 public Integer sumToN(Integer n) {
     //code here
-    Integer oneInt = 1;
-    return oneInt;
+    Integer returnSum = 0;
+    Integer i = 0;
+    for (i : n) {
+        returnSum = returnSum + i;
+    }
+    return returnSum;
 }
