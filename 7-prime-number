@@ -7,7 +7,7 @@ public Boolean isPrime(Integer num) {
         isNumberPrime = true;
     } else {
         //isNumberPrime = false;
-        List<Integer> numeroList = new List<Integer>();
+        List<Integer> numbersDivisibleBy = new List<Integer>();
         numbersDivisibleBy.add(1);
         numbersDivisibleBy.add(num);
         for (i = 1; i < num; i++) {
