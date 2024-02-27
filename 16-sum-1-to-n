@@ -2,8 +2,8 @@ public Integer sumToN(Integer n) {
     //code here
     Integer returnSum = 0;
     Integer i = 0;
-    for (Integer i : n) {
-        returnSum = returnSum + i;
+    for (Integer : n) {
+        returnSum = returnSum + Integer;
     }
     return returnSum;
 }
