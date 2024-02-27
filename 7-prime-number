@@ -1,7 +1,7 @@
 public Boolean isPrime(Integer num) {
     Boolean isNumberPrime;
-    Double numDouble = parseDouble(num);
-    if (Math.mod(numDouble, numDouble) == 0) {
+    Float numFloat = parseFloat(num);
+    if (Math.mod(numFloat, numFloat) == 0) {
         isNumberPrime = true;
     } else {
         isNumberPrime = false;
