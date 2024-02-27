@@ -1,6 +1,8 @@
 public String changeTimeFormat(String strTime) {
     String standardTime;
-    if (strTime >= 12) {
+    String[] checkedHours = strTime.split(':');
+    Integer checkedHour = parseInt(checkedHours[0]);
+    if (checkedHour >= 12) {
         // if PM do this
         String[] timeList = strTime.split(':');
         Integer hourTime = timeList[0] + 12;
