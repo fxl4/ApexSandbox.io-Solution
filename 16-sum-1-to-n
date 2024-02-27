@@ -1,14 +1,13 @@
 public Integer sumToN(Integer n) {
-    Integer index = 1;
     Integer sum = 0;
-    List<String> integerList;
-    while (index != n) {
-        index = index + 1;
-        integerList.add(index);
-    }
-    if (index == n) {
-        sum = integerList.sum();
-        return sum;
-    }
+    Integer finalIndex = n + 1;
+    List<Integer> ints = new Integer[finalIndex];
     
+    for (Integer i = 0; i < finalIndex; i++) {
+        numList.add(i);
+    }
+    for (num : numList) {
+        sum += num;
+    }
+    return sum;
 }
