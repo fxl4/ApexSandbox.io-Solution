@@ -1,0 +1,9 @@
+public Boolean isPrime(Integer num) {
+    Boolean isNumberPrime;
+    if (Math.mod(num, num) == 0) {
+        isNumberPrime = true;
+    } else {
+        isNumberPrime = false;
+    }
+    return isNumberPrime;
+}
