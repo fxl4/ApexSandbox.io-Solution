@@ -9,7 +9,15 @@ public String changeTimeFormat(String strTime) {
 
     // Determine if AM or PM
     Integer hoursInteger = Integer.valueOf(hourPart);
-    if (hoursInteger >= 12) {
+    if (hoursInteger == 12 && minutePart.contains(' AM')) {
+        hoursInteger = Math.mod(hoursInteger, 12);
+        hourPart = String.valueOf(hoursInteger);
+        standardTime = hourPart + ':' + minutePart + ' PM';
+    } else if (hoursInteger == 12 && ) {
+        hoursInteger = Math.mod(hoursInteger, 12);
+        hourPart = String.valueOf(hoursInteger);
+        standardTime = hourPart + ':' + minutePart + ' PM';
+    } else if (hoursInteger >= 12) {
         hoursInteger = Math.mod(hoursInteger, 12);
         hourPart = String.valueOf(hoursInteger);
         standardTime = hourPart + ':' + minutePart + ' PM';
