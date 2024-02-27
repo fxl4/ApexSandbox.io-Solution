@@ -6,8 +6,20 @@ public Boolean isPrime(Integer num) {
     if (primeNumbers.contains(num)) {
         isNumberPrime = true;
     } else {
-        isNumberPrime = false;
+        //isNumberPrime = false;
+        List<Integer> numeroList = new List<Integer>();
+        numbersDivisibleBy.add(1);
+        numbersDivisibleBy.add(num);
+        for (i = 1; i < num; i++) {
+            if (Math.mod(num, i) == 0) {
+                numbersDivisibleBy.add(i);
+            } else {
+                continue;
+            }
+        }
+        if (numbersDivisibleBy.size() > 2) {
+            isNumberPrime = false;
+        }
     }
-
     return isNumberPrime;
 }
