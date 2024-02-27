@@ -2,17 +2,16 @@ public String changeTimeFormat(String strTime) {
     String standardTime;
     String[] checkedHours = strTime.split(':');
     Integer checkedHour = parseInt(checkedHours[0]);
+    String checkedMinute = checkedHours[1];
     if (checkedHour >= 12) {
         // if PM do this
-        String[] timeList = strTime.split(':');
-        Integer hourTime = timeList[0] + 12;
-        String minuteTime = timeList[1] + ' PM';
-        hourTime = hourTime.toString();
+        checkedHour = checkedHour + 12;
+        checkedHour = checkedHour.toString();
+        checkedMinute = timeList[1] + ' PM';
         standardTime = hourTime + minuteTime;
     } else {
         // if AM do this
         // string methods to + ' AM' to end of string.
-        String[] timeList = strTime.split(':');
         standardTime = hourTime + minuteTime + ' AM';
     }
     return standardTime;
