@@ -1,12 +1,20 @@
 public Boolean isPrime(Integer num) {
     Boolean isNumberPrime;
-
-    Integer[] numList = {1};
+    Integer[] numList = {1, num};
+    // Determine how many numbers num is divisible by besides 1 and num
     for (i = 1; i <= num; i++) {
-        ;
+        if (Math.mod(num, i) == 0) {
+            // if there's no remainder after num % i, add it to list 
+            numList.add(i);
+        };
     }
 
-    
+    // determine if any numbers besides 1 and num are on the list
+    if (numList.len() > 2) {
+        isNumberPrime = false;
+    } else {
+        isNumberPrime = true;
+    }
 
     return isNumberPrime;
 }
