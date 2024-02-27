@@ -7,18 +7,13 @@ public String changeTimeFormat(String strTime) {
     String[] timeParts = strTime.split(':');
     String hourPart = timeParts[0];
     String minutePart = timeParts[1];
+    Integer hoursInteger = Integer.valueOf(hourPart);
 
     // Determine if AM or PM
 
-    if (hourPart.contains('00:')) {
+    if (hoursInteger == 0) {
         hourPart = '12';
-        minutePart = minutePart + ' AM';
-        standardTime = hourPart + minutePart;
-        /*
-        hoursInteger = Math.mod(hoursInteger, 12);
-        hourPart = String.valueOf(hoursInteger);
-        standardTime = hourPart + ':' + minutePart + ' PM';
-        */
+        standardTime = hourPart + ':' + minutePart + ' AM';
     } 
 
     // Return standardized time
