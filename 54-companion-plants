@@ -8,6 +8,13 @@ public Boolean companionPlants(String plant1, String plant2) {
         returnResponse = true;
     } else if (plant1 == 'lettuce' && plant2 == 'cucumbers') {
         returnResponse = true;
+    } else if (plant1 == 'onions' && plant2 == 'carrots') {
+        returnResponse = true;
+    } else if (plant1 == 'carrots' && plant2 == 'onions') {
+        returnResponse = true;
+    } else {
+        returnResponse = false;
     }
+
     return returnResponse;
 }
