@@ -10,6 +10,8 @@ public String changeTimeFormat(String strTime) {
     } else {
         // if AM do this
         // string methods to + ' AM' to end of string.
+        String[] timeList = strTime.split(':');
+        standardTime = hourTime + minuteTime + ' AM';
     }
     return standardTime;
 }
