@@ -1,0 +1,7 @@
+public String changeTimeFormat(String strTime) {
+    String militaryTime;
+    if (strTime.contains('p') || strTime.contains('P')) {
+        militaryTime = Math.mod(strTime, 12) + 12;
+    }
+    
+}
