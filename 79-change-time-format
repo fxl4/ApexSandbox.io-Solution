@@ -11,7 +11,7 @@ public String changeTimeFormat(String strTime) {
     // Determine if AM or PM
 
     if (hourPart.contains('00:')) {
-        hourPart = '12:';
+        hourPart = '12';
         minutePart = minutePart + ' AM';
         standardTime = hourPart + minutePart;
         /*
