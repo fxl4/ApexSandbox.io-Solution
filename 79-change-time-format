@@ -1,11 +1,11 @@
 public String changeTimeFormat(String strTime) {
+
     String standardTime;
     String indicator;
 
     // Substring the value
     String[] timeParts = strTime.split(':');
     String hourPart = timeParts[0];
-    Integer hoursInteger = Integer.valueOf(hourPart);
     String minutePart = timeParts[1];
 
     // Determine if AM or PM
