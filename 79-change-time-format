@@ -21,8 +21,10 @@ public String changeTimeFormat(String strTime) {
         hoursInteger = Math.mod(hoursInteger, 12);
         hourPart = String.valueOf(hoursInteger);
         standardTime = hourPart + ':' + minutePart + ' PM';
-    } else {
+    } else if (hoursInteger < 12 && hoursInteger > 9) {
         standardTime = hourPart + ':' + minutePart + ' AM';
+    } else {
+        standardTime = '0' + hourPart + ':' + minutePart + ' AM';
     }
 
     // Return standardized time
