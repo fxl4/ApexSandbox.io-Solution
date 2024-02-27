@@ -3,7 +3,7 @@ public Boolean isPrime(Integer num) {
     Integer[] numList = {1, num};
     // Determine how many numbers num is divisible by besides 1 and num
 
-    for (i = 1; i <= num; i++) {
+    for (i = 1; i < num; i++) {
         if (Math.mod(i, i) == 0) {
             // if there's no remainder after num % i, add it to list 
             numList.add(i);
