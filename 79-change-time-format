@@ -14,7 +14,10 @@ public String changeTimeFormat(String strTime) {
     if (hoursInteger == 0) {
         hourPart = '12';
         standardTime = hourPart + ':' + minutePart + ' AM';
-    } 
+    } else if (hoursInteger == 12) {
+        hourPart = '12';
+        standardTime = hourPart + ':' + minutePart + ' PM';
+    }
 
     // Return standardized time
     return standardTime;
