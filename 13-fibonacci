@@ -1,0 +1,8 @@
+public Integer fibonacci(Integer n) {
+    //code here
+    Integer currentIndex;
+    Integer lastIndex;
+    Integer previousToLastIndex;
+    Integer[] fibonacciList = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
+
+}
