@@ -9,7 +9,7 @@ public Boolean isPrime(Integer num) {
     if (primeNumbers.contains(num)) {
         isNumberPrime = true;
     } else { 
-        // next, iterate through all numbers between 1 and num to determine if others are a diviser.
+        // if not in primeNumbers list, iterate through numbers between 1 and num to check if others are a diviser.
         for (Integer i = 2; i < num; i++) {
             if (Math.mod(num, i) == 0) {
                 numbersDivisibleBy.add(i);
@@ -22,7 +22,7 @@ public Boolean isPrime(Integer num) {
 
     }
 
-     
+    public 
 
     return isNumberPrime;
 }
