@@ -13,16 +13,13 @@ public Boolean isPrime(Integer num) {
         for (Integer i = 2; i < num; i++) {
             if (Math.mod(num, i) == 0) {
                 numbersDivisibleBy.add(i);
+                isNumberPrime = false;
+                return;
             } 
         }
-
-        if (numbersDivisibleBy.size() > 2) {
+        /*if (numbersDivisibleBy.size() > 2) {
             isNumberPrime = false;
-        }
-
+        }*/
     }
-
-    public 
-
     return isNumberPrime;
 }
