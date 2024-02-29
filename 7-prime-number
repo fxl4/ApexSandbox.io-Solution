@@ -13,7 +13,7 @@ public Boolean isPrime(Integer num) {
         for (Integer i = 2; i < num; i++) {
             if (Math.mod(num, i) == 0) {
                 numbersDivisibleBy.add(i);
-                isNumberPrime = false;
+                isNumberPrime = true;
                 continue;
             } 
         }
