@@ -4,7 +4,7 @@ public Boolean isPrime(Integer num) {
     // create a list of prime numbers from 1-100.
     List<Integer> primeNumbers = new List<Integer>{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
     // create a list of numbers our num is divisible by. start with 1 and the num itself.
-    List<Integer> numbersDivisibleBy = new List<Integer>{1};
+    List<Integer> numbersDivisibleBy = new List<Integer>{1, num};
     // if the num appears in primeNumbers list, return true immediately.
     if (primeNumbers.contains(num)) {
         isNumberPrime = true;
