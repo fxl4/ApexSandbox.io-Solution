@@ -14,7 +14,7 @@ public Boolean isPrime(Integer num) {
             if (Math.mod(num, i) == 0) {
                 numbersDivisibleBy.add(i);
                 isNumberPrime = false;
-                return;
+                continue;
             } 
         }
         /*if (numbersDivisibleBy.size() > 2) {
