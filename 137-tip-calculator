@@ -1,6 +1,6 @@
 public Decimal computeTip(Decimal total, Integer percent) {
     String tipString = '.' + percent.toString();
-    Decimal tipAmount = tipString;
+    Decimal tipAmount = Decimal(tipString);
     return total * percent;
     
 }
