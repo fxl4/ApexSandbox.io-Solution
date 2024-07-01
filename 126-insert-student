@@ -5,9 +5,6 @@ public Id insertStudent(String name, String email) {
     List<apxio__student__c> studentList = new List<apxio__student__c>();
     studentList.add(student);
     insert student;
-    student = [SELECT Id, Name, Email 
-    FROM apxio__student__c 
-    WHERE name = name AND email = email];
-    return studentList[0].Id;
+    return student.Id;
 
 }
