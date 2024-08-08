@@ -1,7 +1,7 @@
 public Boolean isTypeAccount(sObject record)
 {
     String sObjectType = record.getSObjectType();
-    if (getSObjectType == 'Account'){
+    if (getSObjectType == Account){
         return true;
     } else {
         return false;
