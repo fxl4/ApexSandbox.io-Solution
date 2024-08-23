@@ -4,6 +4,7 @@ public Decimal average(List<Decimal> numbers){
     for (Decimal i : numbers){
         total += i;
     }
-    Decimal average = (total / numberOfItems).setScale();
+    Decimal average = total / numberOfItems;
+    average = average.setScale(2);
     return average;
 }
