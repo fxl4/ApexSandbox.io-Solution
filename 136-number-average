@@ -4,5 +4,6 @@ public Decimal average(List<Decimal> numbers){
         total += i;
     }
     Decimal average = total / numberList.size();
+    average = average.round();
     return average;
 }
