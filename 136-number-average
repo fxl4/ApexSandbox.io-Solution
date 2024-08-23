@@ -1,0 +1,8 @@
+public Decimal average(List<Decimal> numbers){
+    Decimal total = 0;
+    for (Decimal i : numberList){
+        total += i;
+    }
+    Decimal average = total / numberList.size();
+    return average;
+}
