@@ -5,7 +5,11 @@ public void insertAtStart(String cityName, List<String> cities) {
             if (cities.contains(null)){
                 System.debug('dang, so close!');
             } else {
-                cities.add(0, cityName);
+                if (cities.contains(cityName){
+                    System.debug('dang, so close!');
+                } else {
+                    cities.add(0, cityName);
+                }
             }
         }
     } 
