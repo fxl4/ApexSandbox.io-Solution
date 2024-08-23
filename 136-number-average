@@ -1,6 +1,6 @@
 public Decimal average(List<Decimal> numbers){
     Decimal total = 0;
-    for (Decimal i : numberList){
+    for (Decimal i : numbers){
         total += i;
     }
     Decimal average = total / numbers.size();
