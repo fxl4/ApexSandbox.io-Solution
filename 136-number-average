@@ -1,9 +1,10 @@
 public Decimal average(List<Decimal> numbers){
     Decimal total = 0;
+    Integer numberOfItems = numbers.size();
     for (Decimal i : numbers){
         total += i;
     }
-    Decimal average = total / numbers.size();
-    average = average.round();
+    Decimal average = total / numberOfItems;
+    average = average.setScale();
     return average;
 }
