@@ -3,8 +3,8 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
     String currentOrgName = '';
     List<String> potentialOrgNames = new List<String>();
     for (Integer i = 0; i < adjectives.size(); i++){
-        for (Integer i = 0; i < animals.size(); i++){
-            currentOrgName = adjectives[i] + '-' + animals[i];
+        for (Integer j = 0; j < animals.size(); j++){
+            currentOrgName = adjectives[i] + '-' + animals[j];
             potentialOrgNames.add(currentOrgName);
         }
     }
