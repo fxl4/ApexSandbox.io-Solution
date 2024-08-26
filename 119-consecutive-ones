@@ -12,4 +12,5 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
             currentOnesInARow = 0;
         }
     }
+    return mostOnesInARow;
 }
