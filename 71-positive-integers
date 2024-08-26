@@ -1,11 +1,8 @@
 public List<Integer> positiveIntegers(List<Integer> numbers) {
     //code here
     List<Integer> positiveNumbers = new List<Integer>();
-    Integer currentNumber = 0;
     for (Integer i = 0; i < numbers.size(); i++){
         if (numbers[i] > 0){
-            //currentNumber = numbers[i];
-            //positiveNumbers.add(currentNumber);
             positiveNumbers.add(numbers[i]);
         }
     }
