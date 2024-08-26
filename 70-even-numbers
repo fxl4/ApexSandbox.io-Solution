@@ -1,0 +1,10 @@
+public List<Integer> evenNumbers(Integer n) {
+    //code here
+    List<Integer> evenNums = new List<Integer>();
+    Integer currentEvenNumber = 0;
+    for (Integer i = 0; i < n; i++){
+        currentEvenNumber += 2;
+        evenNums.add(currentEvenNumber);
+    }
+    return evenNums;
+}
