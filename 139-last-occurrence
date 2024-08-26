@@ -5,5 +5,8 @@ public static Integer findLast(List<Integer> nums, Integer target) {
             indexOfFinalTarget = i;
         }
     }
+    if (!nums.contains(target)){
+        indexOfFinalTarget = -1;
+    }
     return indexOfFinalTarget;
 }
