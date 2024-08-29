@@ -19,4 +19,6 @@ public Integer secondLargest(List<Integer> numbers) {
             secondLargestNumber = numero;
         }
     }
+
+    return secondLargestNumber;
 }
