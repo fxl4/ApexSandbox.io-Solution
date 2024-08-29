@@ -1,12 +1,15 @@
 public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
-    //code here
+    Integer currentIndex = 0;
     String currentName = '';
     List<String> completeNames = new List<String>();
-    for (Integer i = 0; i < firstNames.size(); i++){
-        for (Integer j = 0; i < lastNames.size(); j++){
-            currentName = firstNames[i] + ' ' + lastNames[j];
+
+    if (firstNames.size() == lastNames.size()){
+        while (currentIndex < firstNames.size()){
+            currentName = firstNames[currentIndex] + ' ' + lastNames[currentIndex];
             completeNames.add(currentName);
+            currentIndex += 1;
         }
     }
+    
     return completeNames;
 }
