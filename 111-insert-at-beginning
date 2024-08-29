@@ -23,5 +23,4 @@ public void insertAtStart(String cityName, List<String> cities) {
     } while (count < currentListLength);
 
     cities[0] = cityName;
-    return cities;
 }
