@@ -1,24 +1,26 @@
 public void insertAtStart(String cityName, List<String> cities) {
     String currentCity = '';
     Integer currentIndex;
-    Integer currentListLength = cities.size();
-    Integer newListLength = currentListLength + 1;
-
-    cities.add('placeholder');
-    currentIndex = cities.indexOf('placeholder');
     Integer count = 0;
-    System.debug(cities);
+    Integer currentListLength = cities.size();
+
+    if (cities.size() > 1) {
+        cities.add('placeholder');
+        currentIndex = cities.indexOf('placeholder');
+    } else if (cities.size() == 1){
+        cities.add('placeholder');
+        currentIndex = cities.indexOf('placeholder');
+        currentCity = cities[0];
+        cities.set(currentIndex, currentCity);
+        count += 1;
+    }
 
     do {
         currentCity = cities[currentIndex - 1];
         cities.set(currentIndex, currentCity);
-        System.debug('currentIndex = ' + currentIndex + '. currentCity = ' + currentCity + '.');
         currentIndex -= 1;
         count += 1;
-        System.debug('count = ' + count);
-        
     } while (count < currentListLength);
 
     cities[0] = cityName;
-    System.debug(cities);
 }
