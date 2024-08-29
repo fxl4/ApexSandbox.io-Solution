@@ -13,6 +13,10 @@ public void insertAtStart(String cityName, List<String> cities) {
         currentCity = cities[0];
         cities.set(currentIndex, currentCity);
         count += 1;
+    } else if (cities.isEmpty()){
+        cities.add(cityName);
+        count = 1;
+        currentListLength = 1;
     }
 
     do {
