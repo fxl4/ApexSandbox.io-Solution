@@ -20,7 +20,7 @@ public void insertAtStart(String cityName, List<String> cities) {
         cities.set(currentIndex, currentCity);
         currentIndex -= 1;
         count += 1;
-    } while (count < currentListLength);
+    } while (count <= currentListLength);
 
     cities[0] = cityName;
 }
