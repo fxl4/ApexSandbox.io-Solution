@@ -8,8 +8,6 @@ public Integer secondLargest(List<Integer> numbers) {
     for (Integer num : numbers){
         if (num > largestNumber){
             largestNumber = num;
-        } else if (num < largestNumber){
-            largestNumber = num;
         }
     }
 
