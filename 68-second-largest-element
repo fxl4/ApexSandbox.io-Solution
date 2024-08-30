@@ -1,8 +1,8 @@
 public Integer secondLargest(List<Integer> numbers) {
     Integer countOfLargestNumber = 0;
     Integer indexOfLargestNumber = 0;
-    Integer largestNumber;
-    Integer secondLargestNumber = 0;
+    Integer largestNumber = numbers[0];
+    Integer secondLargestNumber = numbers[0];
 
     // first biggest number
     for (Integer num : numbers){
