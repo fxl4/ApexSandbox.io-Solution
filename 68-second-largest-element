@@ -1,4 +1,5 @@
 public Integer secondLargest(List<Integer> numbers) {
+    Integer countOfLargestNumber = 0;
     Integer indexOfLargestNumber = 0;
     Integer largestNumber = 0;
     Integer secondLargestNumber = 0;
@@ -10,8 +11,17 @@ public Integer secondLargest(List<Integer> numbers) {
         }
     }
 
-    indexOfLargestNumber = numbers.indexOf(largestNumber);
-    numbers.remove(indexOfLargestNumber);
+    for (Integer num : numbers){
+        if (num == largestNumber){
+            countOfLargestNumber += 1;
+        }
+    }
+
+
+    for (Integer i = 0; i < countOfLargestNumber; i++){
+        indexOfLargestNumber = numbers.indexOf(largestNumber);
+        numbers.remove(indexOfLargestNumber);
+    }
 
     // second biggest number
     for (Integer numero : numbers){
