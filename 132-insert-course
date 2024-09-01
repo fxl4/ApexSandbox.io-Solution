@@ -4,7 +4,7 @@ public Id insertCourse(String name, String details, Integer credits) {
         apxio__Course_Details__c = details,
         apxio__Credits__c = credits
     );
-    if (num >= 0 && num <= 4){
+    if (credits >= 0 && credits <= 4){
         insert course;
         return course.Id;
     } else {
