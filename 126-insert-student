@@ -1,10 +1,8 @@
 public Id insertStudent(String name, String email) {
-    apxio__student__c student = new apxio__student__c();
-    student.name = name;
-    student.email = email;
-    List<apxio__student__c> studentList = new List<apxio__student__c>();
-    studentList.add(student);
+    // code here
+    apxio__Student__c student = new apxio__Student__c(
+        apxio__Email__c = email,
+        Name = name
+    );
     insert student;
-    return student.Id;
-
 }
