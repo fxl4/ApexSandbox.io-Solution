@@ -5,7 +5,7 @@ public String registerStudent(String name, String phone, String email) {
         apxio__Phone__c = phone
     );
     insert student;
-    String studentId = student.Id;
-    String studentRegistrationNumber = [SELECT apxio__Registration_Number__c FROM apxio__student__c WHERE Id = :studentId].toString();
+    //String studentId = student.Id;
+    List<apxio__student__c> studentList = [SELECT apxio__Registration_Number__c FROM apxio__student__c WHERE Id = :student.Id];
     return studentRegistrationNumber;
 }
