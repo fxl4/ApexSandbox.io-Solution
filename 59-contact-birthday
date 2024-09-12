@@ -2,7 +2,7 @@ public Boolean isBirthday(Contact c) {
     Date today = Date.today();
     Integer todayDay = today.day();
     Integer todayMonth = today.Month();
-    Date contactsBirthday = c.Birthday;
+    Date contactsBirthday = c.Birthdate;
     Integer dayOfBirth = contactsBirthday.day();
     Integer monthOfBirth = contactsBirthday.Month();
     if (todayDay == dayOfBirth && todayMonth == monthOfBirth){
