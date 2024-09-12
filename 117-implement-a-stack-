@@ -1,9 +1,9 @@
 public class Stack {
     
-    List<Integer> franksList = new List<Integer>{1,2,3,4,5};
+    private List<Object> stack = new List<Object>();
     
     public void push(Object obj) {
-        franksList.push(obj);
+        stack.push(obj);
     }
     
     public Object pop() {
