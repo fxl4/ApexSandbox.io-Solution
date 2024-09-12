@@ -4,6 +4,7 @@ public class Stack {
     
     public void push(Object obj) {
         stack.push(obj);
+        return stack;
     }
     
     public Object pop() {
