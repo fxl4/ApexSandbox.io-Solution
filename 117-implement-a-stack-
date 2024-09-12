@@ -1,6 +1,6 @@
 public class Stack {
     
-    List<String> franksList = new List<String>{1,2,3,4,5};
+    List<Integer> franksList = new List<Integer>{1,2,3,4,5};
     
     public void push(Object obj) {
         //implement push
