@@ -1,0 +1,13 @@
+public Boolean isBirthday(Contact c) {
+    Date today = Date.today();
+    Integer todayDay = today.day();
+    Integer todayMonth = today.Month();
+    Date contactsBirthday = c.Birthday;
+    Integer dayOfBirth = contactsBirthday.day();
+    Integer monthOfBirth = contactsBirthday.Month();
+    if (todayDay == dayOfBirth && todayMonth == monthOfBirth){
+        return true;
+    } else {
+        return false;
+    }
+}
