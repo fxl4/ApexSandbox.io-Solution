@@ -1,7 +1,10 @@
 public Map<String, Account> phoneToAccount(List<Account> accounts) {
     //code here
     Map<String, Account> m1 = new Map<String, Account>();
-    List<String> phoneList = [SELECT Phone FROM Account WHERE Phone = :accounts.Phone];
+    List<String> phoneList = new List<String>();
+    for (Account acc : accounts){
+        phoneList.put(acc.Phone);
+    }
     for (String s : phoneList){
         m1.put(s, accounts.get(s));
     }
