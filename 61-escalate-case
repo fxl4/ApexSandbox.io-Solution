@@ -1,7 +1,7 @@
 public void escalateIfMeetsCriteria(Case c) {
-    if (Type == 'Mechanical' || Type == 'Electrical'){
-        IsEscalated = true;
-    } else if (Reason == 'Breakdown' && Status == 'In Progress'){
-        IsEscalated = true;
+    if (c.Type == 'Mechanical' || c.Type == 'Electrical'){
+        c.IsEscalated = true;
+    } else if (c.Reason == 'Breakdown' && c.Status == 'In Progress'){
+        c.IsEscalated = true;
     }
 }
