@@ -1,0 +1,9 @@
+public Set<Id> accountIds(List<Opportunity> opps) {
+    Set<String> setOfIds = new Set<String>();
+    for (Opportunity o : opps){
+        if (!setOfIds.contains(o.AccountId)){
+            setOfIds.add(o.AccountId);
+        }
+    }
+    return setOfIds;
+}
