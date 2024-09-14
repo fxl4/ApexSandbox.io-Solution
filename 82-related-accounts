@@ -1,5 +1,5 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
-    Set<String> setOfIds = new Set<String>();
+    Set<Id> setOfIds = new Set<Id>();
     for (Opportunity o : opps){
         if (!setOfIds.contains(o.AccountId)){
             setOfIds.add(o.AccountId);
