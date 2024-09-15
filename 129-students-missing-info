@@ -1,12 +1,15 @@
 public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
+
     List<apxio__Student__c> studentsNoInfoList = [SELECT Id, Name, apxio__Registration_Number__c, apxio__Active__c, apxio__Email__c, apxio__Phone__c
                                                 FROM apxio__Student__c 
-                                                WHERE apxio__Active__c = true];
+                                                WHERE apxio__Email__c = null OR apxio__Phone__c = nul];
+
     for (Integer i = 0; i < studentsNoInfoList.size(); i++){
-        if (studentsNoInfoList[i].apxio__Email__c != null && studentsNoInfoList[i].apxio__Phone__c != null){
+        if (studentsNoInfoList[i].apxio__Active__c = false){
             studentsNoInfoList.remove(i);
         }
     }
+
     studentsNoInfoList.sort();
     return studentsNoInfoList;
 }
