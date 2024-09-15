@@ -3,8 +3,8 @@ public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
                                                 FROM apxio__Student__c 
                                                 WHERE apxio__Active__c];
     for (Integer i = 0; i < studentsNoInfoList.size(); i++){
-        if (apxio__Email__c != null && apxio__Phone__c != null){
-            studentsNoInfoList.remove(studentsNoInfoList[i]);
+        if (studentsNoInfoList[i].apxio__Email__c != null && studentsNoInfoList[i].apxio__Phone__c != null){
+            studentsNoInfoList.remove(i);
         }
     }
     studentsNoInfoList.sort();
