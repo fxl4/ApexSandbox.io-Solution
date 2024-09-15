@@ -1,0 +1,5 @@
+public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
+    List<apxio__Student__c> studentsNoInfoList = [SELECT Id, Name, Email, Phone FROM apxio__Student__c WHERE Email = null OR Phone = null];
+    studentsNoInfoList.sort();
+    return studentsNoInfoList;
+}
