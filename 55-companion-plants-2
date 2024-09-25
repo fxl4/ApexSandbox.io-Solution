@@ -2,7 +2,7 @@ public Boolean companionPlants(List<String> plants) {
     Boolean bool = false;
 
     for (Integer i = 0; i < plants.size(); i++){
-        if (i == plants.size()) {
+        if (i == plants.size() - 1) {
             break;
         } else if (i < plants.size()) {
             if (plants[i] == 'lettuce') {
