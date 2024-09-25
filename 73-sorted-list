@@ -1,3 +1,15 @@
 public boolean isSorted(List<Integer> numbers) {
-    //code here
+    Boolean bool = true;
+    if (numbers.size() <= 1) {
+        return bool;
+    } else {
+        for (Integer i = 1; i <= numbers.size(); i++) {
+            if (numbers[i] > numbers[i - 1]) {
+                continue;
+            } else {
+                bool = false;
+                return bool;
+            }
+        }
+    }
 }
