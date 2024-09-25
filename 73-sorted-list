@@ -1,7 +1,7 @@
 public boolean isSorted(List<Integer> numbers) {
     Boolean bool = true;
     if (numbers.size() > 1) {
-        for (Integer i = 1; i <= numbers.size(); i++) {
+        for (Integer i = 0; i <= numbers.size(); i++) {
             if (numbers[i] < numbers[i - 1]) {
                 bool = false;
                 continue;
