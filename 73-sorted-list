@@ -7,10 +7,10 @@ public boolean isSorted(List<Integer> numbers) {
                 continue;
             }
         }
-        if (bool == true) {
-            return true;
-        } else {
-            return false;
-        }
+    }
+    if (bool == true) {
+        return true;
+    } else {
+        return false;
     }
 }
