@@ -11,5 +11,8 @@ public boolean isSorted(List<Integer> numbers) {
                 return bool;
             }
         }
+        if (bool == true) {
+            return bool;
+        }
     }
 }
