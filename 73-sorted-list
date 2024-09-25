@@ -1,16 +1,26 @@
 public boolean isSorted(List<Integer> numbers) {
-    Boolean bool = true;
+    Boolean sortedAsc = true;
+    Boolean sortedDesc = true;
+
     if (numbers.size() > 1) {
         for (Integer i = 1; i <= numbers.size(); i++) {
             if (numbers[i] == numbers[i - 1]) {
-                bool = true;
+                sortedAsc = true;
             } if (numbers[i] < numbers[i - 1]) {
-                bool = false;
-                return false;
+                sortedAsc = false;
+                break;
+            }
+        }
+        for (Integer i = 1; i <= numbers.size(); i++) {
+            if (numbers[i] == numbers[i - 1]) {
+                sortedDesc = true;
+            } if (numbers[i] > numbers[i - 1]) {
+                sortedDesc = false;
+                break;
             }
         }
     }
-    if (bool == true) {
+    if (sortedAsc == true || sortedDesc == true) {
         return true;
     } else {
         return false;
