@@ -6,6 +6,7 @@ public boolean isSorted(List<Integer> numbers) {
         for (Integer i = 1; i <= numbers.size(); i++) {
             if (numbers[i] == numbers[i - 1]) {
                 sortedAsc = true;
+                break;
             } if (numbers[i] < numbers[i - 1]) {
                 sortedAsc = false;
                 break;
@@ -14,6 +15,7 @@ public boolean isSorted(List<Integer> numbers) {
         for (Integer i = 1; i <= numbers.size(); i++) {
             if (numbers[i] == numbers[i - 1]) {
                 sortedDesc = true;
+                break;
             } if (numbers[i] > numbers[i - 1]) {
                 sortedDesc = false;
                 break;
