@@ -5,11 +5,8 @@ public boolean isSorted(List<Integer> numbers) {
     if (numbers.size() > 1) {
         for (Integer i = 1; i <= numbers.size(); i++) {
             if (numbers[i] == numbers[i - 1]) {
-                if (numbers[i] == numbers[i + 1]){
-                    sortedAsc = true;
-                }
                 sortedAsc = true;
-                
+                break;
             } if (numbers[i] < numbers[i - 1]) {
                 sortedAsc = false;
                 break;
