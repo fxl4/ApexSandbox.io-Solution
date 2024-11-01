@@ -13,7 +13,7 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
         }
     }
     for (Integer num : numbers1) {
-        if (numbers2.contains(number)) {
+        if (numbers2.contains(num)) {
             existsInBoth.add(true);
         } else {
             existsInBoth.add(false);
