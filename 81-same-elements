@@ -12,14 +12,14 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
             numbers2.add(num);
         }
     }
-    for (Integer number : numbers1) {
+    for (Integer num : numbers1) {
         if (numbers2.contains(number)) {
             existsInBoth.add(true);
         } else {
             existsInBoth.add(false);
         }
     }
-    for (Integer number : numbers2) {
+    for (Integer num : numbers2) {
         if (numbers1.contains(number)) {
             existsInBoth.add(true);
         } else {
