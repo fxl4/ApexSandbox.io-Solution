@@ -1,0 +1,15 @@
+public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
+    List<Boolean> existsInBoth = new List<Boolean>();
+    for (Integer num : nums1) {
+        if (nums2.contains(num)) {
+            existsInBoth.add(true);
+        } else {
+            existsInBoth.add(false);
+        }
+    }
+    if (existsInBoth.contains(false)) {
+        return false;
+    } else {
+        return true;
+    }
+}
