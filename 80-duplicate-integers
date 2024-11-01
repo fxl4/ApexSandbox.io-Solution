@@ -1,19 +1,10 @@
 public Boolean containsDuplicates(List<Integer> nums) {
-    Integer numsSize = nums.size();
     Set<Integer> numsSet = new Set<Integer>();
-    Integer numsSetSize = 0;
     for (Integer num : nums) {
-        if (num == null) {
-            numsSize -= 1;
+        if (numsSet.contains(num)) {
+            return false;
         } else {
             numsSet.add(num);
         }
-    }
-    numsSetSize = numsSet.size();
-
-    if (numsSize == numsSetSize) {
-        return true;
-    } else {
-        return false;
     }
 }
