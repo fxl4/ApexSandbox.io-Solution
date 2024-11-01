@@ -1,7 +1,26 @@
 public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
+    Set<Integer> numbers1 = new Set<Integer>();
+    Set<Integer> numbers2 = new Set<Integer>();
     List<Boolean> existsInBoth = new List<Boolean>();
     for (Integer num : nums1) {
-        if (nums2.contains(num)) {
+        if (num != null) {
+            numbers1.add(num);
+        }
+    }
+    for (Integer num : nums2) {
+        if (num != null) {
+            numbers2.add(num);
+        }
+    }
+    for (Integer number : numbers1) {
+        if (numbers2.contains(number)) {
+            existsInBoth.add(true);
+        } else {
+            existsInBoth.add(false);
+        }
+    }
+    for (Integer number : numbers2) {
+        if (numbers1.contains(number)) {
             existsInBoth.add(true);
         } else {
             existsInBoth.add(false);
