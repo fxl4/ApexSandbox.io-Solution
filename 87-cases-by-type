@@ -1,0 +1,3 @@
+public Map<String, List<Case>> casesByType(List<Case> cases) {
+    //code here
+}
