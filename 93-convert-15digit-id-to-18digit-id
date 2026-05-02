@@ -8,7 +8,7 @@ public String convert15to18DigitId(String fifteenDigit)
         eighteenDigit = String.valueOf(recordId);
         return eighteenDigit;
     } else if (fifteenDigit == null) {
-        eighteenDigit = null;
+        eighteenDigit = 'null';
         return eighteenDigit;
     } else {
         eighteenDigit = '-1';
